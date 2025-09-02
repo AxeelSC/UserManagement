@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Serilog.AspNetCore" Version="9.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\UserManagementSystem.Application2\UserManagementSystem.Application.csproj" />
     <ProjectReference Include="..\UserManagementSystem.Infrastructure\UserManagementSystem.Infrastructure.csproj" />
   </ItemGroup>

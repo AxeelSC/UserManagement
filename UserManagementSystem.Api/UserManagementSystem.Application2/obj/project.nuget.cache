@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "WTKtWqfLXhtJje+c2htKhDni5Yx5GFeZqf1O6xjSrELdVLmjxlX60kgkbNJrhn42SvJnEuXFGnoi7aqHVOqnzg==",
+  "dgSpecHash": "KND5yhe1C3iPcuR4uJdxE3FjtgfYmSGBnsBltd6YgUv6qhtLAs7pdEWICY3yjNtMrgC5sf/Lh9rdyhFHoQR0uw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\UserManagementSystem.Api\\UserManagementSystem.Application2\\UserManagementSystem.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Axel1\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
