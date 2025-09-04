@@ -1,0 +1,12 @@
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\bin\Debug\net8.0\UserManagementSystem.Domain.deps.json
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\bin\Debug\net8.0\UserManagementSystem.Domain.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\bin\Debug\net8.0\UserManagementSystem.Domain.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.AssemblyInfoInputs.cache
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.AssemblyInfo.cs
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.sourcelink.json
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\refint\UserManagementSystem.Domain.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\UserManagementSystem.Domain.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Domain2\obj\Debug\net8.0\ref\UserManagementSystem.Domain.dll

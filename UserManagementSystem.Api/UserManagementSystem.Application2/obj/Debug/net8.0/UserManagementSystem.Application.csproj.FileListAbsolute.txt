@@ -1,0 +1,16 @@
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\bin\Debug\net8.0\UserManagementSystem.Application.deps.json
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\bin\Debug\net8.0\UserManagementSystem.Application.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\bin\Debug\net8.0\UserManagementSystem.Application.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\bin\Debug\net8.0\UserManagementSystem.Domain.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\bin\Debug\net8.0\UserManagementSystem.Domain.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.csproj.AssemblyReference.cache
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.AssemblyInfoInputs.cache
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.AssemblyInfo.cs
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.csproj.CoreCompileInputs.cache
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.sourcelink.json
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.csproj.CopyComplete
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\refint\UserManagementSystem.Application.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\UserManagementSystem.Application.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Application2\obj\Debug\net8.0\ref\UserManagementSystem.Application.dll
