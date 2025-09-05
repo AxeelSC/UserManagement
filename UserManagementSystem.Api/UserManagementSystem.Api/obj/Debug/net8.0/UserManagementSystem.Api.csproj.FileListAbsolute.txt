@@ -159,3 +159,5 @@ C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSys
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.pdb
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.genruntimeconfig.cache
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\ref\UserManagementSystem.Api.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.xml
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.xml

@@ -8,8 +8,8 @@ namespace UserManagementSystem.Domain.Entities
 {
     public class AuditLog
     {
-        public Guid Id { get; set; } = Guid.NewGuid();
-        public Guid? UserId { get; set; }
+        public int Id { get; set; }
+        public int? UserId { get; set; }
         public User? User { get; set; }
 
         public string Action { get; set; } = default!;

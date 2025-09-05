@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>UserManagementSystem.Api</name>
+    </assembly>
+    <members>
+        <member name="M:UserManagementSystem.Api.Controllers.AuditLogsController.GetRecentAuditLogs(System.Int32)">
+            <summary>
+            Get recent audit logs
+            </summary>
+            <param name="count">Number of logs to retrieve (default: 100, max: 1000)</param>
+            <returns>List of recent audit logs</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuditLogsController.GetAuditLogsByUserId(System.Int32)">
+            <summary>
+            Get audit logs for a specific user
+            </summary>
+            <param name="userId">User ID</param>
+            <returns>List of audit logs for the user</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuditLogsController.GetAuditLogsByAction(System.String)">
+            <summary>
+            Get audit logs by action type
+            </summary>
+            <param name="action">Action type (e.g., "User Created", "User Updated")</param>
+            <returns>List of audit logs for the specified action</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuditLogsController.LogAction(UserManagementSystem.Api.Controllers.ManualLogRequest)">
+            <summary>
+            Manually log an action (for administrative purposes)
+            </summary>
+            <param name="logRequest">Log request details</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="T:UserManagementSystem.Api.Controllers.ManualLogRequest">
+            <summary>
+            Request model for manually logging actions
+            </summary>
+        </member>
+        <member name="P:UserManagementSystem.Api.Controllers.ManualLogRequest.UserId">
+            <summary>
+            User ID (optional)
+            </summary>
+        </member>
+        <member name="P:UserManagementSystem.Api.Controllers.ManualLogRequest.Action">
+            <summary>
+            Action description
+            </summary>
+        </member>
+        <member name="P:UserManagementSystem.Api.Controllers.ManualLogRequest.Metadata">
+            <summary>
+            Additional metadata (optional)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetAllRoles">
+            <summary>
+            Get all roles
+            </summary>
+            <returns>List of roles</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetRole(System.Int32)">
+            <summary>
+            Get role by ID
+            </summary>
+            <param name="id">Role ID</param>
+            <returns>Role details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetRoleByName(System.String)">
+            <summary>
+            Get role by name
+            </summary>
+            <param name="name">Role name</param>
+            <returns>Role details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetRolesByUserId(System.Int32)">
+            <summary>
+            Get roles assigned to a specific user
+            </summary>
+            <param name="userId">User ID</param>
+            <returns>List of roles assigned to the user</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.CreateRole(UserManagementSystem.Application.DTOs.CreateRoleDto)">
+            <summary>
+            Create a new role
+            </summary>
+            <param name="createRoleDto">Role creation details</param>
+            <returns>Created role</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.UpdateRole(System.Int32,UserManagementSystem.Application.DTOs.UpdateRoleDto)">
+            <summary>
+            Update an existing role
+            </summary>
+            <param name="id">Role ID</param>
+            <param name="updateRoleDto">Role update details</param>
+            <returns>Updated role</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RolesController.DeleteRole(System.Int32)">
+            <summary>
+            Delete a role
+            </summary>
+            <param name="id">Role ID</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetAllUsers">
+            <summary>
+            Get all users
+            </summary>
+            <returns>List of users</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetActiveUsers">
+            <summary>
+            Get active users only
+            </summary>
+            <returns>List of active users</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetUser(System.Int32)">
+            <summary>
+            Get user by ID
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetUserByUsername(System.String)">
+            <summary>
+            Get user by username
+            </summary>
+            <param name="username">Username</param>
+            <returns>User details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetUserByEmail(System.String)">
+            <summary>
+            Get user by email
+            </summary>
+            <param name="email">Email address</param>
+            <returns>User details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.CreateUser(UserManagementSystem.Application.DTOs.CreateUserDto)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="createUserDto">User creation details</param>
+            <returns>Created user</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.UpdateUser(System.Int32,UserManagementSystem.Application.DTOs.UpdateUserDto)">
+            <summary>
+            Update an existing user
+            </summary>
+            <param name="id">User ID</param>
+            <param name="updateUserDto">User update details</param>
+            <returns>Updated user</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.DeleteUser(System.Int32)">
+            <summary>
+            Delete a user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.ChangePassword(System.Int32,UserManagementSystem.Application.DTOs.ChangePasswordDto)">
+            <summary>
+            Change user password
+            </summary>
+            <param name="id">User ID</param>
+            <param name="changePasswordDto">Password change details</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.ActivateUser(System.Int32)">
+            <summary>
+            Activate a user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success status</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.UsersController.DeactivateUser(System.Int32)">
+            <summary>
+            Deactivate a user
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success status</returns>
+        </member>
+    </members>
+</doc>

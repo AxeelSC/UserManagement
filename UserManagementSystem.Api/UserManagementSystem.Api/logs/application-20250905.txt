@@ -1,0 +1,116 @@
+2025-09-05 18:13:11.574 +02:00 [INF] Starting web application
+2025-09-05 18:13:13.558 +02:00 [FTL] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 72
+2025-09-05 18:14:22.404 +02:00 [INF] Starting web application
+2025-09-05 18:14:24.043 +02:00 [FTL] Application terminated unexpectedly
+System.InvalidOperationException: Unable to resolve service for type 'Serilog.Extensions.Hosting.DiagnosticContext' while attempting to activate 'Serilog.AspNetCore.RequestLoggingMiddleware'.
+   at Microsoft.Extensions.Internal.ActivatorUtilities.ConstructorMatcher.CreateInstance(IServiceProvider provider)
+   at Microsoft.Extensions.Internal.ActivatorUtilities.CreateInstance(IServiceProvider provider, Type instanceType, Object[] parameters)
+   at Microsoft.AspNetCore.Builder.UseMiddlewareExtensions.ReflectionMiddlewareBinder.CreateMiddleware(RequestDelegate next)
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.ApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 72
+2025-09-05 18:17:04.898 +02:00 [INF] Starting web application
+2025-09-05 18:21:41.275 +02:00 [INF] Starting web application
+2025-09-05 18:23:41.521 +02:00 [INF] Starting web application
+2025-09-05 18:30:09.953 +02:00 [INF] Starting web application
+2025-09-05 18:30:11.193 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-05 18:30:11.199 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-05 18:30:11.204 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-05 18:30:11.207 +02:00 [INF] Hosting environment: Development
+2025-09-05 18:30:11.209 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-05 18:30:43.978 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-05 18:30:45.485 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 1514.7258ms
+2025-09-05 18:30:45.521 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.html - null null
+2025-09-05 18:30:45.756 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.html - 200 null text/html;charset=utf-8 235.2638ms
+2025-09-05 18:30:45.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - null null
+2025-09-05 18:30:45.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-05 18:30:45.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.css - null null
+2025-09-05 18:30:45.847 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - null null
+2025-09-05 18:30:45.861 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.js - null null
+2025-09-05 18:30:45.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-05 18:30:45.925 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.js - 200 null application/javascript;charset=utf-8 73.0098ms
+2025-09-05 18:30:45.950 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.css - 200 152 text/css 102.7572ms
+2025-09-05 18:30:46.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - 200 23647 text/css 231.8649ms
+2025-09-05 18:30:46.077 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 230.395ms
+2025-09-05 18:30:45.878 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-05 18:30:46.034 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 156.1876ms
+2025-09-05 18:30:46.128 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 281.2548ms
+2025-09-05 18:30:46.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 653.6421ms
+2025-09-05 18:30:46.547 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/favicon-16x16.png - null null
+2025-09-05 18:30:46.691 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-05 18:30:46.747 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/favicon-16x16.png - 200 665 image/png 200.4126ms
+2025-09-05 18:30:47.284 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 593.1918ms
+2025-09-05 18:32:32.709 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Roles - null null
+2025-09-05 18:32:32.732 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-05 18:32:32.768 +02:00 [INF] Route matched with {action = "GetAllRoles", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[System.Collections.Generic.List`1[UserManagementSystem.Application.DTOs.RoleDto]]]] GetAllRoles() on controller UserManagementSystem.Api.Controllers.RolesController (UserManagementSystem.Api).
+2025-09-05 18:32:34.079 +02:00 [INF] API: GetAllRoles endpoint called
+2025-09-05 18:32:34.084 +02:00 [INF] Retrieving all roles
+2025-09-05 18:32:35.076 +02:00 [INF] Executed DbCommand (60ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Description], [r].[Name]
+FROM [Roles] AS [r]
+2025-09-05 18:32:35.191 +02:00 [INF] Successfully retrieved 4 roles
+2025-09-05 18:32:35.212 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[System.Collections.Generic.List`1[[UserManagementSystem.Application.DTOs.RoleDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-05 18:32:35.258 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api) in 2473.6579ms
+2025-09-05 18:32:35.262 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-05 18:32:35.275 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Roles - 200 null application/json; charset=utf-8 2568.3596ms
+2025-09-05 19:26:37.747 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Roles - null null
+2025-09-05 19:26:37.767 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-05 19:26:37.781 +02:00 [INF] Route matched with {action = "GetAllRoles", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[System.Collections.Generic.List`1[UserManagementSystem.Application.DTOs.RoleDto]]]] GetAllRoles() on controller UserManagementSystem.Api.Controllers.RolesController (UserManagementSystem.Api).
+2025-09-05 19:26:37.892 +02:00 [INF] API: GetAllRoles endpoint called
+2025-09-05 19:26:37.894 +02:00 [INF] Retrieving all roles
+2025-09-05 19:26:39.222 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Description], [r].[Name]
+FROM [Roles] AS [r]
+2025-09-05 19:26:39.229 +02:00 [INF] Successfully retrieved 4 roles
+2025-09-05 19:26:39.234 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[System.Collections.Generic.List`1[[UserManagementSystem.Application.DTOs.RoleDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-05 19:26:39.239 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api) in 1452.5984ms
+2025-09-05 19:26:39.242 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-05 19:26:39.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Roles - 200 null application/json; charset=utf-8 1500.2302ms
+2025-09-05 19:28:02.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-05 19:28:02.338 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.UsersController.GetAllUsers (UserManagementSystem.Api)'
+2025-09-05 19:28:02.355 +02:00 [INF] Route matched with {action = "GetAllUsers", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[System.Collections.Generic.List`1[UserManagementSystem.Application.DTOs.UserSummaryDto]]]] GetAllUsers() on controller UserManagementSystem.Api.Controllers.UsersController (UserManagementSystem.Api).
+2025-09-05 19:28:02.382 +02:00 [INF] API: GetAllUsers endpoint called
+2025-09-05 19:28:02.386 +02:00 [INF] Retrieving all users
+2025-09-05 19:28:02.418 +02:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[Username]
+FROM [Users] AS [u]
+2025-09-05 19:28:02.423 +02:00 [INF] Successfully retrieved 0 users
+2025-09-05 19:28:02.427 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[System.Collections.Generic.List`1[[UserManagementSystem.Application.DTOs.UserSummaryDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-05 19:28:02.435 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.UsersController.GetAllUsers (UserManagementSystem.Api) in 75.1722ms
+2025-09-05 19:28:02.445 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.UsersController.GetAllUsers (UserManagementSystem.Api)'
+2025-09-05 19:28:02.448 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 200 null application/json; charset=utf-8 123.8858ms
+2025-09-05 19:28:55.565 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Roles/2 - null null
+2025-09-05 19:28:55.578 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetRole (UserManagementSystem.Api)'
+2025-09-05 19:28:55.610 +02:00 [INF] Route matched with {action = "GetRole", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.RoleDto]]] GetRole(Int32) on controller UserManagementSystem.Api.Controllers.RolesController (UserManagementSystem.Api).
+2025-09-05 19:28:55.673 +02:00 [INF] API: GetRole endpoint called with ID: 2
+2025-09-05 19:28:55.677 +02:00 [INF] Retrieving role with ID: 2
+2025-09-05 19:28:55.972 +02:00 [INF] Executed DbCommand (44ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Description], [r].[Name]
+FROM [Roles] AS [r]
+WHERE [r].[Id] = @__p_0
+2025-09-05 19:28:55.979 +02:00 [INF] Successfully retrieved role: Manager (ID: 2)
+2025-09-05 19:28:55.982 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[UserManagementSystem.Application.DTOs.RoleDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-05 19:28:55.987 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.RolesController.GetRole (UserManagementSystem.Api) in 372.7037ms
+2025-09-05 19:28:55.990 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetRole (UserManagementSystem.Api)'
+2025-09-05 19:28:55.993 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Roles/2 - 200 null application/json; charset=utf-8 428.5318ms

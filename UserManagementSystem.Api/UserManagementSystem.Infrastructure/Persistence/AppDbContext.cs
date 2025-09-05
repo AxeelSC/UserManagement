@@ -67,6 +67,13 @@ namespace UserManagementSystem.Infrastructure.Persistence
                 .WithMany(u => u.AuditLogs)
                 .HasForeignKey(a => a.UserId)
                 .OnDelete(DeleteBehavior.SetNull); // si borras el user, conservas el log
+
+            modelBuilder.Entity<Role>().HasData(
+                new Role { Id = 1, Name = "Admin", Description = "Full system access and user management" },
+                new Role { Id = 2, Name = "Manager", Description = "Manage users and view reports" },
+                new Role { Id = 3, Name = "User", Description = "Standard user access" },
+                new Role { Id = 4, Name = "Viewer", Description = "Read-only access" }
+            );
         }
     }
 }
