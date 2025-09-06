@@ -12,11 +12,13 @@ namespace UserManagementSystem.Infrastructure.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly ILogger<UserService> _logger;
+        private readonly IPasswordService _passwordService;
 
-        public UserService(IUnitOfWork unitOfWork, ILogger<UserService> logger)
+        public UserService(IUnitOfWork unitOfWork, ILogger<UserService> logger, IPasswordService passwordService)
         {
             _unitOfWork = unitOfWork;
             _logger = logger;
+            _passwordService = passwordService; 
         }
 
         public async Task<ApiResponse<UserDto>> GetUserByIdAsync(int id)
@@ -102,6 +104,12 @@ namespace UserManagementSystem.Infrastructure.Services
                     return ApiResponse<UserDto>.ErrorResult("Email already exists");
                 }
 
+                // Password strength validation
+                if (!_passwordService.IsPasswordStrong(createUserDto.Password))
+                {
+                    _logger.LogWarning("Weak password provided for user: {Username}", createUserDto.Username);
+                    return ApiResponse<UserDto>.ErrorResult("Password must be at least 8 characters long and contain uppercase, lowercase, digit, and special character");
+                }
                 // Create user entity
                 var user = new User
                 {
@@ -481,18 +489,14 @@ namespace UserManagementSystem.Infrastructure.Services
                 IsActive = user.IsActive
             };
         }
-
-        // Password methods (placeholder - you'll implement proper hashing)
         private string HashPassword(string password)
         {
-            // TODO: Implement proper password hashing (e.g., BCrypt)
-            return password; // TEMPORARY - don't use in production!
+            return _passwordService.HashPassword(password);
         }
 
         private bool VerifyPassword(string password, string hash)
         {
-            // TODO: Implement proper password verification
-            return password == hash; // TEMPORARY - don't use in production!
+            return _passwordService.VerifyPassword(password, hash);
         }
     }
 }

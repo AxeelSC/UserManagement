@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Sv5WJQYxrTQ8SeIVpXyjelkeCiFJn4/IbqgNu1CW/DzX1u3rv+smj9Nq2i7jFsuosoXx7xt2Gd+vP8Jby0o9+g==",
+  "dgSpecHash": "OlGNaNCa7ZVedeIfIN9DUR5SzjnskgqmEu1MJVKiQf+1JeABEUJy2wQsB79TvX76HhDlNUYHKaKcpQD6WUGMJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Axel1\\Desktop\\Proyectos .Net\\UserManagementSystem.Api\\UserManagementSystem.Infrastructure\\UserManagementSystem.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Axel1\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Axel1\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
+    "C:\\Users\\Axel1\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\Axel1\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
     "C:\\Users\\Axel1\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Axel1\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

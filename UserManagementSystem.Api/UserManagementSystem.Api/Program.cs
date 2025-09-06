@@ -39,6 +39,7 @@ try
     builder.Services.AddScoped<IUserService, UserService>();
     builder.Services.AddScoped<IRoleService, RoleService>();
     builder.Services.AddScoped<IAuditLogService, AuditLogService>();
+    builder.Services.AddScoped<IPasswordService, PasswordService>();
 
     // Swagger/OpenAPI
     builder.Services.AddEndpointsApiExplorer();
