@@ -122,6 +122,7 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 _logger.LogDebug("Adding user to database");
                 await _unitOfWork.Users.AddAsync(user);
+                await _unitOfWork.SaveChangesAsync();
 
                 // Add roles if specified
                 _logger.LogDebug("Assigning {RoleCount} roles to user", createUserDto.RoleIds.Count);

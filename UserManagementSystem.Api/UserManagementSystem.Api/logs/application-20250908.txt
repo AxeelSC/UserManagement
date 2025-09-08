@@ -1,0 +1,27 @@
+2025-09-08 21:23:10.395 +02:00 [INF] Starting web application
+2025-09-08 21:23:14.873 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-08 21:23:14.884 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-08 21:23:14.899 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-08 21:23:14.939 +02:00 [INF] Hosting environment: Development
+2025-09-08 21:23:14.945 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-08 21:23:19.936 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-08 21:23:21.362 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 1436.2542ms
+2025-09-08 21:23:21.478 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-08 21:23:21.489 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-08 21:23:21.529 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 48.4124ms
+2025-09-08 21:23:24.938 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 3448.4312ms
+2025-09-08 21:23:25.062 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-08 21:23:25.487 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 425.549ms
+2025-09-08 21:23:35.891 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Roles - null null
+2025-09-08 21:23:35.926 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-08 21:23:35.972 +02:00 [INF] Route matched with {action = "GetAllRoles", controller = "Roles"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[System.Collections.Generic.List`1[UserManagementSystem.Application.DTOs.RoleDto]]]] GetAllRoles() on controller UserManagementSystem.Api.Controllers.RolesController (UserManagementSystem.Api).
+2025-09-08 21:23:37.488 +02:00 [INF] API: GetAllRoles endpoint called
+2025-09-08 21:23:37.493 +02:00 [INF] Retrieving all roles
+2025-09-08 21:23:39.843 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Description], [r].[Name]
+FROM [Roles] AS [r]
+2025-09-08 21:23:39.944 +02:00 [INF] Successfully retrieved 4 roles
+2025-09-08 21:23:39.965 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[System.Collections.Generic.List`1[[UserManagementSystem.Application.DTOs.RoleDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-09-08 21:23:40.019 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api) in 4035.6689ms
+2025-09-08 21:23:40.022 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.RolesController.GetAllRoles (UserManagementSystem.Api)'
+2025-09-08 21:23:40.035 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Roles - 200 null application/json; charset=utf-8 4144.6075ms

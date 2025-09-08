@@ -67,7 +67,7 @@ namespace UserManagementSystem.Infrastructure.Services
             catch (Exception ex)
             {
                 _logger.LogError(ex, "Error verifying password");
-                return false; // Fail securely
+                return false;
             }
         }
 
