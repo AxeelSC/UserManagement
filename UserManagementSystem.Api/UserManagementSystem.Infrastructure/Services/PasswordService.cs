@@ -124,19 +124,16 @@ namespace UserManagementSystem.Infrastructure.Services
             using var rng = RandomNumberGenerator.Create();
             var password = new StringBuilder();
 
-            // Ensure at least one character from each category
             password.Append(GetRandomChar(upperCase, rng));
             password.Append(GetRandomChar(lowerCase, rng));
             password.Append(GetRandomChar(digits, rng));
             password.Append(GetRandomChar(specialChars, rng));
 
-            // Fill the rest randomly
             for (int i = 4; i < length; i++)
             {
                 password.Append(GetRandomChar(allChars, rng));
             }
 
-            // Shuffle the password
             return ShuffleString(password.ToString(), rng);
         }
 

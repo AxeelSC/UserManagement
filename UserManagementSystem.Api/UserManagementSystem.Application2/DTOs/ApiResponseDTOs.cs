@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace UserManagementSystem.Application.DTOs
 {
-    // Standard API response wrapper
     public class ApiResponse<T>
     {
         public bool Success { get; set; }
@@ -35,7 +34,6 @@ namespace UserManagementSystem.Application.DTOs
         }
     }
 
-    // For paginated results
     public class PagedResult<T>
     {
         public List<T> Items { get; set; } = new();

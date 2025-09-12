@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace UserManagementSystem.Application.DTOs
 {
-    // For API responses
     public class RoleDto
     {
         public int Id { get; set; }
@@ -14,14 +13,12 @@ namespace UserManagementSystem.Application.DTOs
         public string? Description { get; set; }
     }
 
-    // For creating roles
     public class CreateRoleDto
     {
         public string Name { get; set; } = string.Empty;
         public string? Description { get; set; }
     }
 
-    // For updating roles
     public class UpdateRoleDto
     {
         public string Name { get; set; } = string.Empty;

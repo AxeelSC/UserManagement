@@ -95,12 +95,10 @@ namespace UserManagementSystem.Infrastructure.Services
             }
             catch (Exception ex)
             {
-                // Log error but don't throw - audit logging shouldn't break the main operation
                 _logger.LogError(ex, "Error logging audit action: {Action} for user: {UserId}", action, userId ?? 0);
             }
         }
 
-        // Helper method for mapping
         private AuditLogDto MapToAuditLogDto(AuditLog auditLog)
         {
             return new AuditLogDto

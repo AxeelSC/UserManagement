@@ -68,7 +68,6 @@ try
 
     var app = builder.Build();
 
-    // Configure the HTTP request pipeline - THIS WAS MISSING!
     if (app.Environment.IsDevelopment())
     {
         app.UseSwagger();

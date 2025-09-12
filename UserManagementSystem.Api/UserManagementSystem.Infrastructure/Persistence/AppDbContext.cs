@@ -66,7 +66,7 @@ namespace UserManagementSystem.Infrastructure.Persistence
             audit.HasOne(a => a.User)
                 .WithMany(u => u.AuditLogs)
                 .HasForeignKey(a => a.UserId)
-                .OnDelete(DeleteBehavior.SetNull); // si borras el user, conservas el log
+                .OnDelete(DeleteBehavior.SetNull); // If user is deleted, you still have the log
 
             modelBuilder.Entity<Role>().HasData(
                 new Role { Id = 1, Name = "Admin", Description = "Full system access and user management" },

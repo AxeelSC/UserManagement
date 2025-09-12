@@ -67,14 +67,12 @@ namespace UserManagementSystem.Infrastructure.Services
             {
                 _logger.LogInformation("Creating role with name: {RoleName}", createRoleDto.Name);
 
-                // Validation
                 if (!await _unitOfWork.Roles.IsNameUniqueAsync(createRoleDto.Name))
                 {
                     _logger.LogWarning("Attempt to create role with duplicate name: {RoleName}", createRoleDto.Name);
                     return ApiResponse<RoleDto>.ErrorResult("Role name already exists");
                 }
 
-                // Create role entity
                 var role = new Role
                 {
                     Name = createRoleDto.Name,
@@ -84,10 +82,9 @@ namespace UserManagementSystem.Infrastructure.Services
                 _logger.LogDebug("Adding role to database: {RoleName}", role.Name);
                 await _unitOfWork.Roles.AddAsync(role);
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
-                    UserId = null, // Could be set if you track who created the role
+                    UserId = null, 
                     Action = "Role Created",
                     Metadata = $"Role: {role.Name}, Description: {role.Description}",
                     Timestamp = DateTime.UtcNow
@@ -122,14 +119,12 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 _logger.LogDebug("Found role: {RoleName}, updating with new data", role.Name);
 
-                // Validation
                 if (!await _unitOfWork.Roles.IsNameUniqueAsync(updateRoleDto.Name, id))
                 {
                     _logger.LogWarning("Attempt to update role {RoleId} with duplicate name: {RoleName}", id, updateRoleDto.Name);
                     return ApiResponse<RoleDto>.ErrorResult("Role name already exists");
                 }
 
-                // Update role properties
                 var oldName = role.Name;
                 var oldDescription = role.Description;
 
@@ -138,7 +133,6 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 await _unitOfWork.Roles.UpdateAsync(role);
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
                     UserId = null,
@@ -176,7 +170,6 @@ namespace UserManagementSystem.Infrastructure.Services
                 var roleName = role.Name;
                 _logger.LogDebug("Found role: {RoleName}, checking for assigned users", roleName);
 
-                // Check if role is assigned to any users
                 var usersWithRole = await _unitOfWork.UserRoles.GetByRoleIdAsync(id);
                 if (usersWithRole.Any())
                 {
@@ -188,7 +181,6 @@ namespace UserManagementSystem.Infrastructure.Services
                 _logger.LogDebug("Role {RoleName} is not assigned to any users, proceeding with deletion", roleName);
                 await _unitOfWork.Roles.DeleteAsync(role);
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
                     UserId = null,
@@ -253,7 +245,6 @@ namespace UserManagementSystem.Infrastructure.Services
             }
         }
 
-        // Helper method for mapping
         private RoleDto MapToRoleDto(Role role)
         {
             return new RoleDto

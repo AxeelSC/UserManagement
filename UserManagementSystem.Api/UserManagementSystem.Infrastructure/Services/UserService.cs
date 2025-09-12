@@ -91,7 +91,6 @@ namespace UserManagementSystem.Infrastructure.Services
                 _logger.LogInformation("Creating user with username: {Username}, email: {Email}",
                     createUserDto.Username, createUserDto.Email);
 
-                // Validation
                 if (!await _unitOfWork.Users.IsUsernameUniqueAsync(createUserDto.Username))
                 {
                     _logger.LogWarning("Attempt to create user with duplicate username: {Username}", createUserDto.Username);
@@ -104,13 +103,11 @@ namespace UserManagementSystem.Infrastructure.Services
                     return ApiResponse<UserDto>.ErrorResult("Email already exists");
                 }
 
-                // Password strength validation
                 if (!_passwordService.IsPasswordStrong(createUserDto.Password))
                 {
                     _logger.LogWarning("Weak password provided for user: {Username}", createUserDto.Username);
                     return ApiResponse<UserDto>.ErrorResult("Password must be at least 8 characters long and contain uppercase, lowercase, digit, and special character");
                 }
-                // Create user entity
                 var user = new User
                 {
                     Username = createUserDto.Username,
@@ -124,7 +121,6 @@ namespace UserManagementSystem.Infrastructure.Services
                 await _unitOfWork.Users.AddAsync(user);
                 await _unitOfWork.SaveChangesAsync();
 
-                // Add roles if specified
                 _logger.LogDebug("Assigning {RoleCount} roles to user", createUserDto.RoleIds.Count);
                 foreach (var roleId in createUserDto.RoleIds)
                 {
@@ -137,7 +133,6 @@ namespace UserManagementSystem.Infrastructure.Services
                     await _unitOfWork.UserRoles.AddAsync(userRole);
                 }
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
                     UserId = user.Id,
@@ -149,7 +144,6 @@ namespace UserManagementSystem.Infrastructure.Services
                 _logger.LogDebug("Saving changes to database");
                 await _unitOfWork.SaveChangesAsync();
 
-                // Return the created user
                 var createdUser = await _unitOfWork.Users.GetUserWithRolesAsync(user.Id);
                 var userDto = MapToUserDto(createdUser!);
 
@@ -178,7 +172,6 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 _logger.LogDebug("Found user: {Username}, updating with new data", user.Username);
 
-                // Validation
                 if (!await _unitOfWork.Users.IsUsernameUniqueAsync(updateUserDto.Username, id))
                 {
                     _logger.LogWarning("Attempt to update user {UserId} with duplicate username: {Username}", id, updateUserDto.Username);
@@ -191,7 +184,6 @@ namespace UserManagementSystem.Infrastructure.Services
                     return ApiResponse<UserDto>.ErrorResult("Email already exists");
                 }
 
-                // Update user properties
                 var oldUsername = user.Username;
                 var oldEmail = user.Email;
 
@@ -201,7 +193,7 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 await _unitOfWork.Users.UpdateAsync(user);
 
-                // Update roles
+
                 _logger.LogDebug("Updating roles for user {UserId}", id);
                 await _unitOfWork.UserRoles.RemoveAllUserRolesAsync(id);
                 foreach (var roleId in updateUserDto.RoleIds)
@@ -215,7 +207,6 @@ namespace UserManagementSystem.Infrastructure.Services
                     await _unitOfWork.UserRoles.AddAsync(userRole);
                 }
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
                     UserId = id,
@@ -257,10 +248,9 @@ namespace UserManagementSystem.Infrastructure.Services
 
                 await _unitOfWork.Users.DeleteAsync(user);
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
-                    UserId = null, // User will be deleted
+                    UserId = null,
                     Action = "User Deleted",
                     Metadata = $"Username: {username}, ID: {id}",
                     Timestamp = DateTime.UtcNow
@@ -345,18 +335,15 @@ namespace UserManagementSystem.Infrastructure.Services
                     return ApiResponse<bool>.ErrorResult("User not found");
                 }
 
-                // Verify current password
                 if (!VerifyPassword(changePasswordDto.CurrentPassword, user.PasswordHash))
                 {
                     _logger.LogWarning("Invalid current password provided for user: {Username} (ID: {UserId})", user.Username, userId);
                     return ApiResponse<bool>.ErrorResult("Current password is incorrect");
                 }
 
-                // Update password
                 user.PasswordHash = HashPassword(changePasswordDto.NewPassword);
                 await _unitOfWork.Users.UpdateAsync(user);
 
-                // Log the action
                 await _unitOfWork.AuditLogs.AddAsync(new AuditLog
                 {
                     UserId = userId,
@@ -461,7 +448,6 @@ namespace UserManagementSystem.Infrastructure.Services
             }
         }
 
-        // Helper methods for mapping
         private UserDto MapToUserDto(User user)
         {
             return new UserDto
