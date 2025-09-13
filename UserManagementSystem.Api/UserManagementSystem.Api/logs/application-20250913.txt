@@ -1,0 +1,234 @@
+2025-09-13 19:03:37.022 +02:00 [INF] Starting web application
+2025-09-13 19:03:37.431 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:03:52.715 +02:00 [INF] Starting web application
+2025-09-13 19:03:52.963 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:09:47.072 +02:00 [INF] Starting web application
+2025-09-13 19:09:47.329 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:09:56.924 +02:00 [INF] Starting web application
+2025-09-13 19:09:57.286 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:11:01.451 +02:00 [INF] Starting web application
+2025-09-13 19:11:01.693 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:14:34.755 +02:00 [INF] Starting web application
+2025-09-13 19:14:34.997 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:16:20.372 +02:00 [INF] Starting web application
+2025-09-13 19:16:22.036 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-13 19:16:22.044 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-13 19:16:22.054 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 19:16:22.058 +02:00 [INF] Hosting environment: Development
+2025-09-13 19:16:22.060 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-13 19:16:25.082 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-13 19:16:25.700 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 631.0074ms
+2025-09-13 19:16:25.715 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.html - null null
+2025-09-13 19:16:25.916 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.html - 200 null text/html;charset=utf-8 200.9369ms
+2025-09-13 19:16:26.031 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - null null
+2025-09-13 19:16:26.031 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.css - null null
+2025-09-13 19:16:26.033 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - null null
+2025-09-13 19:16:26.142 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.css - 200 152 text/css 110.9033ms
+2025-09-13 19:16:26.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-13 19:16:26.215 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - 200 70860 text/javascript 59.9725ms
+2025-09-13 19:16:26.215 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - 200 23647 text/css 184.2066ms
+2025-09-13 19:16:26.260 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.js - null null
+2025-09-13 19:16:26.261 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-13 19:16:26.263 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - 200 417980 text/javascript 230.3191ms
+2025-09-13 19:16:26.287 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-13 19:16:26.270 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.js - 200 null application/javascript;charset=utf-8 10.7804ms
+2025-09-13 19:16:26.311 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 49.9173ms
+2025-09-13 19:16:26.491 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 206.2075ms
+2025-09-13 19:16:26.764 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-13 19:16:26.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.html - null null
+2025-09-13 19:16:26.782 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.html - 200 null text/html;charset=utf-8 8.694ms
+2025-09-13 19:16:26.814 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/favicon-32x32.png - null null
+2025-09-13 19:16:26.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/favicon-32x32.png - 200 628 image/png 10.926ms
+2025-09-13 19:16:27.164 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 400.5806ms
+2025-09-13 19:19:21.399 +02:00 [INF] Starting web application
+2025-09-13 19:19:21.665 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:19:36.516 +02:00 [INF] Starting web application
+2025-09-13 19:19:36.753 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:21:35.074 +02:00 [INF] Starting web application
+2025-09-13 19:21:35.313 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:22:09.666 +02:00 [INF] Starting web application
+2025-09-13 19:22:09.904 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:22:35.941 +02:00 [INF] Starting web application
+2025-09-13 19:22:36.184 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:23:55.890 +02:00 [INF] Starting web application
+2025-09-13 19:23:56.125 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 19:25:21.696 +02:00 [INF] Starting web application
+2025-09-13 19:25:21.930 +02:00 [FTL] Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\Program.cs:line 69
+2025-09-13 21:33:50.952 +02:00 [INF] Starting web application
+2025-09-13 21:33:52.198 +02:00 [INF] User profile is available. Using 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 21:33:52.284 +02:00 [INF] Creating key {12036d9d-4352-453b-a2be-67b76be3d9ca} with creation date 2025-09-13 19:33:52Z, activation date 2025-09-13 19:33:52Z, and expiration date 2025-12-12 19:33:52Z.
+2025-09-13 21:33:52.301 +02:00 [INF] Writing data to file 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys\key-12036d9d-4352-453b-a2be-67b76be3d9ca.xml'.
+2025-09-13 21:33:52.657 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-13 21:33:52.659 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-13 21:33:52.663 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 21:33:52.665 +02:00 [INF] Hosting environment: Development
+2025-09-13 21:33:52.667 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-13 21:34:07.158 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-13 21:34:07.158 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-13 21:34:07.246 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 103.6578ms
+2025-09-13 21:34:07.358 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.9416ms
+2025-09-13 21:34:07.551 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-13 21:34:08.189 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 638.4511ms
+2025-09-13 23:46:59.863 +02:00 [INF] Starting web application
+2025-09-13 23:47:02.100 +02:00 [INF] User profile is available. Using 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 23:47:02.666 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-13 23:47:02.668 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-13 23:47:02.674 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 23:47:02.677 +02:00 [INF] Hosting environment: Development
+2025-09-13 23:47:02.680 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-13 23:47:19.109 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-13 23:47:19.109 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-13 23:47:19.180 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 81.7648ms
+2025-09-13 23:47:19.277 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 180.1177ms
+2025-09-13 23:47:19.549 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-13 23:47:20.195 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 646.0272ms
+2025-09-13 23:48:46.880 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/register - application/json 101
+2025-09-13 23:48:47.064 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-13 23:48:47.111 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.UserDto]]] Register(UserManagementSystem.Application.DTOs.Auth.RegisterRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-13 23:48:47.128 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api) in 7.1844ms
+2025-09-13 23:48:47.133 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-13 23:48:47.142 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'UserManagementSystem.Application.Services.IAuthService' while attempting to activate 'UserManagementSystem.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-13 23:48:47.209 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/register - 500 null text/plain; charset=utf-8 328.9131ms
+2025-09-13 23:49:35.295 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/register - application/json 89
+2025-09-13 23:49:35.323 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-13 23:49:35.354 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.UserDto]]] Register(UserManagementSystem.Application.DTOs.Auth.RegisterRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-13 23:49:35.359 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api) in 0.9558ms
+2025-09-13 23:49:35.362 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-13 23:49:35.366 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'UserManagementSystem.Application.Services.IAuthService' while attempting to activate 'UserManagementSystem.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-13 23:49:35.376 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/register - 500 null text/plain; charset=utf-8 81.6611ms

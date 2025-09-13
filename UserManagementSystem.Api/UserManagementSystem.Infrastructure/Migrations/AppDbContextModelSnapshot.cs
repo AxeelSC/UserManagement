@@ -103,6 +103,111 @@ namespace UserManagementSystem.Infrastructure.Migrations
                         });
                 });
 
+            modelBuilder.Entity("UserManagementSystem.Domain.Entities.Team", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
+
+                    b.ToTable("Teams");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Finance Department",
+                            Name = "Finance"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Human Resources Department",
+                            Name = "HR"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Information Technology Department",
+                            Name = "IT"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2025, 1, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Description = "Marketing Department",
+                            Name = "Marketing"
+                        });
+                });
+
+            modelBuilder.Entity("UserManagementSystem.Domain.Entities.TeamRequest", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime?>("ProcessedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("ProcessedByUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProcessingNotes")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<DateTime>("RequestedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Status")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TeamId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProcessedByUserId");
+
+                    b.HasIndex("TeamId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("TeamRequests");
+                });
+
             modelBuilder.Entity("UserManagementSystem.Domain.Entities.User", b =>
                 {
                     b.Property<int>("Id")
@@ -130,6 +235,9 @@ namespace UserManagementSystem.Infrastructure.Migrations
                         .HasMaxLength(512)
                         .HasColumnType("nvarchar(512)");
 
+                    b.Property<int?>("TeamId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
                         .IsRequired()
                         .HasMaxLength(32)
@@ -139,6 +247,8 @@ namespace UserManagementSystem.Infrastructure.Migrations
 
                     b.HasIndex("Email")
                         .IsUnique();
+
+                    b.HasIndex("TeamId");
 
                     b.HasIndex("Username")
                         .IsUnique();
@@ -174,6 +284,42 @@ namespace UserManagementSystem.Infrastructure.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("UserManagementSystem.Domain.Entities.TeamRequest", b =>
+                {
+                    b.HasOne("UserManagementSystem.Domain.Entities.User", "ProcessedByUser")
+                        .WithMany("ProcessedTeamRequests")
+                        .HasForeignKey("ProcessedByUserId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("UserManagementSystem.Domain.Entities.Team", "Team")
+                        .WithMany("TeamRequests")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("UserManagementSystem.Domain.Entities.User", "User")
+                        .WithMany("TeamRequests")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("ProcessedByUser");
+
+                    b.Navigation("Team");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("UserManagementSystem.Domain.Entities.User", b =>
+                {
+                    b.HasOne("UserManagementSystem.Domain.Entities.Team", "Team")
+                        .WithMany("Users")
+                        .HasForeignKey("TeamId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.Navigation("Team");
+                });
+
             modelBuilder.Entity("UserManagementSystem.Domain.Entities.UserRole", b =>
                 {
                     b.HasOne("UserManagementSystem.Domain.Entities.Role", "Role")
@@ -198,9 +344,20 @@ namespace UserManagementSystem.Infrastructure.Migrations
                     b.Navigation("UserRoles");
                 });
 
+            modelBuilder.Entity("UserManagementSystem.Domain.Entities.Team", b =>
+                {
+                    b.Navigation("TeamRequests");
+
+                    b.Navigation("Users");
+                });
+
             modelBuilder.Entity("UserManagementSystem.Domain.Entities.User", b =>
                 {
                     b.Navigation("AuditLogs");
+
+                    b.Navigation("ProcessedTeamRequests");
+
+                    b.Navigation("TeamRequests");
 
                     b.Navigation("UserRoles");
                 });

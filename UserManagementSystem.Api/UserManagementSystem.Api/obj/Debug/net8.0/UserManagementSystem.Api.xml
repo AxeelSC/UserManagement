@@ -52,6 +52,32 @@
             Additional metadata (optional)
             </summary>
         </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuthController.Login(UserManagementSystem.Application.DTOs.Auth.LoginRequestDto)">
+            <summary>
+            User login
+            </summary>
+            <param name="request">Login credentials</param>
+            <returns>JWT token and user information</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuthController.Register(UserManagementSystem.Application.DTOs.Auth.RegisterRequestDto)">
+            <summary>
+            User registration
+            </summary>
+            <param name="request">Registration details</param>
+            <returns>Created user information</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuthController.GetCurrentUser">
+            <summary>
+            Get current user information from token
+            </summary>
+            <returns>Current user details</returns>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuthController.Logout">
+            <summary>
+            Logout (client-side token invalidation)
+            </summary>
+            <returns>Success message</returns>
+        </member>
         <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetAllRoles">
             <summary>
             Get all roles
