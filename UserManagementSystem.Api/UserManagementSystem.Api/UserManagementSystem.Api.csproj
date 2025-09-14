@@ -25,4 +25,9 @@
     <ProjectReference Include="..\UserManagementSystem.Infrastructure\UserManagementSystem.Infrastructure.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<Using Include="Microsoft.AspNetCore.Mvc" />
+		<Using Include="Microsoft.AspNetCore.Mvc.Filters" />
+	</ItemGroup>
+
 </Project>

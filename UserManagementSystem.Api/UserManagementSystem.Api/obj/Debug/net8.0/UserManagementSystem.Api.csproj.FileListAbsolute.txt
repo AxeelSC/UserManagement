@@ -5,10 +5,13 @@ C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSys
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.runtimeconfig.json
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.pdb
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.xml
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -156,10 +159,7 @@ C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSys
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.csproj.CopyComplete
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.dll
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\refint\UserManagementSystem.Api.dll
+C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.xml
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.pdb
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.genruntimeconfig.cache
 C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\ref\UserManagementSystem.Api.dll
-C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\UserManagementSystem.Api.xml
-C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\obj\Debug\net8.0\UserManagementSystem.Api.xml
-C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\BCrypt.Net-Next.dll
-C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -1,0 +1,265 @@
+2025-09-14 17:41:14.866 +02:00 [INF] Starting web application
+2025-09-14 17:41:16.618 +02:00 [INF] User profile is available. Using 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-14 17:41:17.271 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-14 17:41:17.273 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-14 17:41:17.278 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 17:41:17.280 +02:00 [INF] Hosting environment: Development
+2025-09-14 17:41:17.282 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-14 17:41:21.474 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-14 17:41:21.942 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 477.8742ms
+2025-09-14 17:41:22.073 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.html - null null
+2025-09-14 17:41:22.431 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.html - 200 null text/html;charset=utf-8 357.9905ms
+2025-09-14 17:41:22.666 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-14 17:41:22.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - null null
+2025-09-14 17:41:22.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - null null
+2025-09-14 17:41:22.686 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - null null
+2025-09-14 17:41:22.683 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.css - null null
+2025-09-14 17:41:22.688 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.js - null null
+2025-09-14 17:41:22.696 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-14 17:41:22.743 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 77.3313ms
+2025-09-14 17:41:22.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.css - 304 null null 103.3006ms
+2025-09-14 17:41:22.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-standalone-preset.js - 304 null null 96.9159ms
+2025-09-14 17:41:22.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui-bundle.js - 304 null null 99.7343ms
+2025-09-14 17:41:22.790 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.js - 200 null application/javascript;charset=utf-8 101.5749ms
+2025-09-14 17:41:22.785 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/swagger-ui.css - 304 null null 102.3631ms
+2025-09-14 17:41:22.948 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 251.5969ms
+2025-09-14 17:41:23.168 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-14 17:41:23.674 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 507.5027ms
+2025-09-14 17:42:49.216 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/register - application/json 102
+2025-09-14 17:42:49.378 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-14 17:42:49.431 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.UserDto]]] Register(UserManagementSystem.Application.DTOs.Auth.RegisterRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-14 17:42:49.449 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api) in 8.1813ms
+2025-09-14 17:42:49.454 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-14 17:42:49.463 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'UserManagementSystem.Application.Services.IAuthService' while attempting to activate 'UserManagementSystem.Api.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-09-14 17:42:49.529 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/register - 500 null text/plain; charset=utf-8 312.4259ms
+2025-09-14 17:49:27.515 +02:00 [INF] Starting web application
+2025-09-14 17:49:28.900 +02:00 [INF] User profile is available. Using 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-14 17:49:29.439 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-14 17:49:29.442 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-14 17:49:29.448 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 17:49:29.451 +02:00 [INF] Hosting environment: Development
+2025-09-14 17:49:29.453 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-14 17:49:33.909 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-14 17:49:34.277 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 375.6129ms
+2025-09-14 17:49:34.435 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-14 17:49:34.442 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/index.js - null null
+2025-09-14 17:49:34.444 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-14 17:49:34.467 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 32.1314ms
+2025-09-14 17:49:34.473 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/index.js - 499 null application/javascript;charset=utf-8 30.806ms
+2025-09-14 17:49:34.555 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 112.8086ms
+2025-09-14 17:49:34.800 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-14 17:49:35.159 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 359.9237ms
+2025-09-14 18:01:30.429 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/register - application/json 90
+2025-09-14 18:01:30.537 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-14 18:01:30.575 +02:00 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.UserDto]]] Register(UserManagementSystem.Application.DTOs.Auth.RegisterRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-14 18:01:32.074 +02:00 [INF] API: Register endpoint called for username: testuser
+2025-09-14 18:01:32.079 +02:00 [INF] Registration attempt for username: testuser
+2025-09-14 18:01:34.720 +02:00 [INF] Executed DbCommand (102ms) [Parameters=[@__username_0='?' (Size = 32)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Username] = @__username_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-14 18:01:34.805 +02:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Users] AS [u]
+        WHERE [u].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2025-09-14 18:01:35.978 +02:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 256), @p2='?' (DbType = Boolean), @p3='?' (DbType = DateTime2), @p4='?' (Size = 512), @p5='?' (DbType = Int32), @p6='?' (Size = 32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([CreatedAt], [Email], [IsActive], [LastLoginAt], [PasswordHash], [TeamId], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-09-14 18:01:36.128 +02:00 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32), @p4='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Metadata], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+INSERT INTO [UserRoles] ([RoleId], [UserId], [AssignedAt])
+VALUES (@p4, @p5, @p6);
+2025-09-14 18:01:36.351 +02:00 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Email], [t].[IsActive], [t].[LastLoginAt], [t].[PasswordHash], [t].[TeamId], [t].[Username], [t0].[UserId], [t0].[RoleId], [t0].[AssignedAt], [t0].[Id], [t0].[Description], [t0].[Name]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserId], [u0].[RoleId], [u0].[AssignedAt], [r].[Id], [r].[Description], [r].[Name]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UserId]
+ORDER BY [t].[Id], [t0].[UserId], [t0].[RoleId]
+2025-09-14 18:01:36.384 +02:00 [INF] Registration successful for user: testuser
+2025-09-14 18:01:36.401 +02:00 [INF] Executing CreatedAtActionResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[UserManagementSystem.Application.DTOs.UserDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-14 18:01:36.462 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api) in 5879.0855ms
+2025-09-14 18:01:36.466 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Register (UserManagementSystem.Api)'
+2025-09-14 18:01:36.479 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/register - 201 null application/json; charset=utf-8 6050.0385ms
+2025-09-14 18:05:57.317 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/login - application/json 69
+2025-09-14 18:05:57.333 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 18:05:57.343 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto]]] Login(UserManagementSystem.Application.DTOs.Auth.LoginRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-14 18:05:57.458 +02:00 [INF] API: Login endpoint called for username: testuser
+2025-09-14 18:05:57.465 +02:00 [INF] Login attempt for username: testuser
+2025-09-14 18:05:57.483 +02:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-09-14 18:05:57.497 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Email], [t].[IsActive], [t].[LastLoginAt], [t].[PasswordHash], [t].[TeamId], [t].[Username], [t0].[UserId], [t0].[RoleId], [t0].[AssignedAt], [t0].[Id], [t0].[Description], [t0].[Name]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserId], [u0].[RoleId], [u0].[AssignedAt], [r].[Id], [r].[Description], [r].[Name]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UserId]
+ORDER BY [t].[Id], [t0].[UserId], [t0].[RoleId]
+2025-09-14 18:05:58.123 +02:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Metadata], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-14 18:05:58.128 +02:00 [INF] Login successful for user: testuser
+2025-09-14 18:05:58.131 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-14 18:05:58.138 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api) in 791.3032ms
+2025-09-14 18:05:58.141 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 18:05:58.143 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/login - 200 null application/json; charset=utf-8 826.6757ms
+2025-09-14 21:23:49.649 +02:00 [INF] Starting web application
+2025-09-14 21:23:50.982 +02:00 [INF] User profile is available. Using 'C:\Users\Axel1\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-14 21:23:51.447 +02:00 [INF] Now listening on: https://localhost:7149
+2025-09-14 21:23:51.449 +02:00 [INF] Now listening on: http://localhost:5114
+2025-09-14 21:23:51.455 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 21:23:51.458 +02:00 [INF] Hosting environment: Development
+2025-09-14 21:23:51.460 +02:00 [INF] Content root path: C:\Users\Axel1\Desktop\Proyectos .Net\UserManagementSystem.Api\UserManagementSystem.Api
+2025-09-14 21:23:55.338 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger - null null
+2025-09-14 21:23:55.710 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger - 301 0 null 380.6146ms
+2025-09-14 21:23:56.091 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - null null
+2025-09-14 21:23:56.130 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_framework/aspnetcore-browser-refresh.js - 200 13784 application/javascript; charset=utf-8 38.9103ms
+2025-09-14 21:23:56.312 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/_vs/browserLink - null null
+2025-09-14 21:23:56.388 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/_vs/browserLink - 200 null text/javascript; charset=UTF-8 76.2155ms
+2025-09-14 21:23:56.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/favicon-16x16.png - null null
+2025-09-14 21:23:56.665 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/favicon-16x16.png - 499 665 image/png 59.4719ms
+2025-09-14 21:23:56.750 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - null null
+2025-09-14 21:23:57.129 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 379.4519ms
+2025-09-14 23:37:03.141 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/login - application/json 68
+2025-09-14 23:37:03.301 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 23:37:03.360 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto]]] Login(UserManagementSystem.Application.DTOs.Auth.LoginRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-14 23:37:04.875 +02:00 [INF] API: Login endpoint called for username: testuser
+2025-09-14 23:37:04.881 +02:00 [INF] Login attempt for username: testuser
+2025-09-14 23:37:07.224 +02:00 [INF] Executed DbCommand (93ms) [Parameters=[@__username_0='?' (Size = 32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-09-14 23:37:07.524 +02:00 [INF] Executed DbCommand (13ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Email], [t].[IsActive], [t].[LastLoginAt], [t].[PasswordHash], [t].[TeamId], [t].[Username], [t0].[UserId], [t0].[RoleId], [t0].[AssignedAt], [t0].[Id], [t0].[Description], [t0].[Name]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserId], [u0].[RoleId], [u0].[AssignedAt], [r].[Id], [r].[Description], [r].[Name]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UserId]
+ORDER BY [t].[Id], [t0].[UserId], [t0].[RoleId]
+2025-09-14 23:37:08.971 +02:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Metadata], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-14 23:37:09.020 +02:00 [INF] Login successful for user: testuser
+2025-09-14 23:37:09.036 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-14 23:37:09.079 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api) in 5710.1802ms
+2025-09-14 23:37:09.082 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 23:37:09.093 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/login - 200 null application/json; charset=utf-8 5953.3126ms
+2025-09-14 23:38:16.011 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:38:16.028 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:38:16.037 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:38:16.039 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 28.9468ms
+2025-09-14 23:38:58.532 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:38:58.548 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:38:58.550 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:38:58.553 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 22.0555ms
+2025-09-14 23:39:00.607 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:39:00.614 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:39:00.616 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:39:00.618 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 11.614ms
+2025-09-14 23:39:37.256 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:39:37.267 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:39:37.269 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:39:37.271 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 14.6781ms
+2025-09-14 23:43:21.084 +02:00 [INF] Request starting HTTP/2 POST https://localhost:7149/api/Auth/login - application/json 68
+2025-09-14 23:43:21.094 +02:00 [INF] Executing endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 23:43:21.096 +02:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[UserManagementSystem.Application.DTOs.ApiResponse`1[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto]]] Login(UserManagementSystem.Application.DTOs.Auth.LoginRequestDto) on controller UserManagementSystem.Api.Controllers.AuthController (UserManagementSystem.Api).
+2025-09-14 23:43:21.181 +02:00 [INF] API: Login endpoint called for username: testuser
+2025-09-14 23:43:21.183 +02:00 [INF] Login attempt for username: testuser
+2025-09-14 23:43:21.193 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__username_0
+2025-09-14 23:43:21.200 +02:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Id], [t].[CreatedAt], [t].[Email], [t].[IsActive], [t].[LastLoginAt], [t].[PasswordHash], [t].[TeamId], [t].[Username], [t0].[UserId], [t0].[RoleId], [t0].[AssignedAt], [t0].[Id], [t0].[Description], [t0].[Name]
+FROM (
+    SELECT TOP(1) [u].[Id], [u].[CreatedAt], [u].[Email], [u].[IsActive], [u].[LastLoginAt], [u].[PasswordHash], [u].[TeamId], [u].[Username]
+    FROM [Users] AS [u]
+    WHERE [u].[Id] = @__userId_0
+) AS [t]
+LEFT JOIN (
+    SELECT [u0].[UserId], [u0].[RoleId], [u0].[AssignedAt], [r].[Id], [r].[Description], [r].[Name]
+    FROM [UserRoles] AS [u0]
+    INNER JOIN [Roles] AS [r] ON [u0].[RoleId] = [r].[Id]
+) AS [t0] ON [t].[Id] = [t0].[UserId]
+ORDER BY [t].[Id], [t0].[UserId], [t0].[RoleId]
+2025-09-14 23:43:21.733 +02:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 128), @p1='?' (Size = 2000), @p2='?' (DbType = DateTime2), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AuditLogs] ([Action], [Metadata], [Timestamp], [UserId])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3);
+2025-09-14 23:43:21.739 +02:00 [INF] Login successful for user: testuser
+2025-09-14 23:43:21.742 +02:00 [INF] Executing OkObjectResult, writing value of type 'UserManagementSystem.Application.DTOs.ApiResponse`1[[UserManagementSystem.Application.DTOs.Auth.LoginResponseDto, UserManagementSystem.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-09-14 23:43:21.746 +02:00 [INF] Executed action UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api) in 645.7997ms
+2025-09-14 23:43:21.749 +02:00 [INF] Executed endpoint 'UserManagementSystem.Api.Controllers.AuthController.Login (UserManagementSystem.Api)'
+2025-09-14 23:43:21.752 +02:00 [INF] Request finished HTTP/2 POST https://localhost:7149/api/Auth/login - 200 null application/json; charset=utf-8 672.623ms
+2025-09-14 23:44:01.321 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:44:01.326 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:44:01.329 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:44:01.332 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 11.4142ms
+2025-09-14 23:47:55.515 +02:00 [INF] Request starting HTTP/2 GET https://localhost:7149/api/Users - null null
+2025-09-14 23:47:55.528 +02:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-14 23:47:55.530 +02:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-09-14 23:47:55.532 +02:00 [INF] Request finished HTTP/2 GET https://localhost:7149/api/Users - 401 0 null 18.5387ms
