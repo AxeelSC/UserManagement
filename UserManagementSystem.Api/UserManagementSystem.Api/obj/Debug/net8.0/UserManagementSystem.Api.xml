@@ -52,6 +52,11 @@
             Additional metadata (optional)
             </summary>
         </member>
+        <member name="M:UserManagementSystem.Api.Controllers.AuthController.TestAuth">
+            <summary>
+            Test JWT authentication (for debugging)
+            </summary>
+        </member>
         <member name="M:UserManagementSystem.Api.Controllers.AuthController.Login(UserManagementSystem.Application.DTOs.Auth.LoginRequestDto)">
             <summary>
             User login

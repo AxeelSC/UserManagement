@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 using UserManagementSystem.Application.DTOs;
 using UserManagementSystem.Application.DTOs.Auth;
 using UserManagementSystem.Application.Services;
@@ -18,6 +19,20 @@ namespace UserManagementSystem.Api.Controllers
         {
             _authService = authService;
             _logger = logger;
+        }
+
+        /// <summary>
+        /// Test JWT authentication (for debugging)
+        /// </summary>
+        [HttpGet("test")]
+        [Authorize]
+        public ActionResult<string> TestAuth()
+        {
+            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+            var username = User.Identity?.Name;
+            var roles = string.Join(", ", User.FindAll(ClaimTypes.Role).Select(c => c.Value));
+
+            return Ok($"Authenticated! UserId: {userId}, Username: {username}, Roles: {roles}");
         }
 
         /// <summary>

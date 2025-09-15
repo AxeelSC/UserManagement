@@ -182,7 +182,14 @@ namespace UserManagementSystem.Infrastructure.Services
         public string GenerateJwtToken(User user)
         {
             var jwtSettings = _configuration.GetSection("Jwt");
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]!));
+            var keyString = jwtSettings["Key"]!;
+
+            // Add debugging
+            _logger.LogInformation("JWT Key length: {KeyLength}", keyString.Length);
+            _logger.LogInformation("JWT Issuer: {Issuer}", jwtSettings["Issuer"]);
+            _logger.LogInformation("JWT Audience: {Audience}", jwtSettings["Audience"]);
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(keyString));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var claims = new List<Claim>

@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using UserManagementSystem.Application.Interfaces.Repositories;
+using UserManagementSystem.Domain.Entities;
 using UserManagementSystem.Infrastructure.Persistence;
 
 namespace UserManagementSystem.Infrastructure.Repositories
@@ -16,13 +17,16 @@ namespace UserManagementSystem.Infrastructure.Repositories
             Roles = new RoleRepository(_context);
             UserRoles = new UserRoleRepository(_context);
             AuditLogs = new AuditLogRepository(_context);
+            Teams = new TeamRepository(_context); 
+            TeamRequests = new TeamRequestRepository(_context); 
         }
 
         public IUserRepository Users { get; private set; }
         public IRoleRepository Roles { get; private set; }
         public IUserRoleRepository UserRoles { get; private set; }
         public IAuditLogRepository AuditLogs { get; private set; }
-
+        public ITeamRepository Teams { get; private set; } 
+        public ITeamRequestRepository TeamRequests { get; private set; }
         public async Task<int> SaveChangesAsync()
         {
             return await _context.SaveChangesAsync();

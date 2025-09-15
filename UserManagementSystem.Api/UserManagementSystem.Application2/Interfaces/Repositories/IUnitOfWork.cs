@@ -12,7 +12,8 @@ namespace UserManagementSystem.Application.Interfaces.Repositories
         IRoleRepository Roles { get; }
         IUserRoleRepository UserRoles { get; }
         IAuditLogRepository AuditLogs { get; }
-
+        ITeamRepository Teams { get; } 
+        ITeamRequestRepository TeamRequests { get; } 
         Task<int> SaveChangesAsync();
         Task BeginTransactionAsync();
         Task CommitTransactionAsync();
