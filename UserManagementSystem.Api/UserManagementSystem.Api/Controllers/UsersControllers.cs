@@ -85,35 +85,6 @@ namespace UserManagementSystem.Api.Controllers
             return StatusCode(500, result);
         }
 
-        /// <summary>
-        /// Create a new user (Admin only)
-        /// </summary>
-        [HttpPost]
-        [RequireRole("Admin")]
-        [ProducesResponseType(typeof(ApiResponse<UserDto>), 201)]
-        [ProducesResponseType(typeof(ApiResponse<object>), 400)]
-        [ProducesResponseType(typeof(ApiResponse<object>), 403)]
-        [ProducesResponseType(typeof(ApiResponse<object>), 500)]
-        public async Task<ActionResult<ApiResponse<UserDto>>> CreateUser([FromBody] CreateUserDto createUserDto)
-        {
-            _logger.LogInformation("API: CreateUser called by admin: {Username}", User.GetUsername());
-
-            if (!ModelState.IsValid)
-            {
-                _logger.LogWarning("API: CreateUser called with invalid model state");
-                return BadRequest(ApiResponse<UserDto>.ErrorResult("Invalid input data"));
-            }
-
-            var result = await _userService.CreateUserAsync(createUserDto);
-
-            if (result.Success)
-                return CreatedAtAction(nameof(GetUser), new { id = result.Data!.Id }, result);
-
-            if (result.Message.Contains("already exists"))
-                return BadRequest(result);
-
-            return StatusCode(500, result);
-        }
 
         /// <summary>
         /// Update user (Admin, Manager for team members, or own profile)

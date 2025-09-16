@@ -83,6 +83,26 @@
             </summary>
             <returns>Success message</returns>
         </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RoleManagementController.PromoteToManager(UserManagementSystem.Application.DTOs.RoleManagement.PromoteToManagerDto)">
+            <summary>
+            Promote user to manager (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RoleManagementController.DemoteManager(System.Int32)">
+            <summary>
+            Demote manager to user (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RoleManagementController.ChangeUserRole(System.Int32,UserManagementSystem.Application.DTOs.RoleManagement.ChangeRoleDto)">
+            <summary>
+            Change user role (Manager for team members, Admin for any user)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.RoleManagementController.GetAvailableRoles(System.Int32)">
+            <summary>
+            Get available roles for a user (what roles the current user can assign to the target user)
+            </summary>
+        </member>
         <member name="M:UserManagementSystem.Api.Controllers.RolesController.GetAllRoles">
             <summary>
             Get all roles
@@ -132,6 +152,81 @@
             <param name="id">Role ID</param>
             <returns>Success status</returns>
         </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.CreateRequest(UserManagementSystem.Application.DTOs.Teams.CreateTeamRequestDto)">
+            <summary>
+            Create a request to join a team (All authenticated users)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.GetMyRequests">
+            <summary>
+            Get current user's team requests
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.GetTeamMailbox">
+            <summary>
+            Get team mailbox - pending requests for manager's team (Manager only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.ProcessRequest(System.Int32,UserManagementSystem.Application.DTOs.Teams.ProcessTeamRequestDto)">
+            <summary>
+            Process a team request (approve or reject) - Manager only
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.CancelRequest(System.Int32)">
+            <summary>
+            Cancel a pending request (Users can cancel their own requests)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamRequestsController.GetRequestsForTeam(System.Int32)">
+            <summary>
+            Get pending requests for a specific team (Admin and Manager of that team only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.GetAllTeams">
+            <summary>
+            Get all teams (All authenticated users can view teams)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.GetTeam(System.Int32)">
+            <summary>
+            Get team by ID (All authenticated users can view team details)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.GetTeamByName(System.String)">
+            <summary>
+            Get team by name (All authenticated users can view team details)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.CreateTeam(UserManagementSystem.Application.DTOs.Teams.CreateTeamDto)">
+            <summary>
+            Create a new team (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.UpdateTeam(System.Int32,UserManagementSystem.Application.DTOs.Teams.UpdateTeamDto)">
+            <summary>
+            Update a team (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.DeleteTeam(System.Int32)">
+            <summary>
+            Delete a team (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.GetManagedTeams">
+            <summary>
+            Get teams managed by current user (Manager only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.AssignManager(System.Int32,System.Int32)">
+            <summary>
+            Assign a manager to a team (Admin only)
+            </summary>
+        </member>
+        <member name="M:UserManagementSystem.Api.Controllers.TeamsController.RemoveManager(System.Int32)">
+            <summary>
+            Remove manager from a team (Admin only)
+            </summary>
+        </member>
         <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetAllUsers">
             <summary>
             Get all users (Admin and Manager only)
@@ -145,11 +240,6 @@
         <member name="M:UserManagementSystem.Api.Controllers.UsersController.GetUser(System.Int32)">
             <summary>
             Get user by ID (Admin, Manager for team members, or own profile)
-            </summary>
-        </member>
-        <member name="M:UserManagementSystem.Api.Controllers.UsersController.CreateUser(UserManagementSystem.Application.DTOs.CreateUserDto)">
-            <summary>
-            Create a new user (Admin only)
             </summary>
         </member>
         <member name="M:UserManagementSystem.Api.Controllers.UsersController.UpdateUser(System.Int32,UserManagementSystem.Application.DTOs.UpdateUserDto)">

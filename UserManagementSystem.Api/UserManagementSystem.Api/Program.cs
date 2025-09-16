@@ -84,6 +84,8 @@ try
     builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
     builder.Services.AddScoped<IAuditLogRepository, AuditLogRepository>();
     builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+    builder.Services.AddScoped<ITeamService, TeamService>(); 
+    builder.Services.AddScoped<ITeamRequestService, TeamRequestService>();
 
     // Repository Services
     builder.Services.AddScoped<IUserService, UserService>();
@@ -92,8 +94,8 @@ try
     builder.Services.AddScoped<IPasswordService, PasswordService>();
     builder.Services.AddScoped<IAuthService, AuthService>();
     builder.Services.AddScoped<ITeamRepository, TeamRepository>(); 
-    builder.Services.AddScoped<ITeamRequestRepository, TeamRequestRepository>(); 
-
+    builder.Services.AddScoped<ITeamRequestRepository, TeamRequestRepository>();
+    builder.Services.AddScoped<IRoleManagementService, RoleManagementService>();
 
     // Swagger/OpenAPI
     builder.Services.AddEndpointsApiExplorer();
